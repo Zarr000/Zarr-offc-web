@@ -1,37 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="description" content="Zarr OFFC - Official aesthetic and modern website" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>YOKOSO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-mode">
+
+<audio autoplay loop id="bg-audio">
+  <source src="media/background.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+>
+
+<video autoplay muted loop id="bg-video">
+  <source src="media/background.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+>
+
+<div id="loader-wrapper">
+  <div id="loader"></div>
+</div>
+ class="fade-in">
+<button id="darkModeToggle" class="btn-neon" style="position: fixed; top: 15px; right: 15px; z-index: 1000;">Dark Mode</button>
 
   <div class="container">
+    
     <!-- NAVIGATION BAR -->
-    <nav class="container-navbar">
-      <ul class="ul-navbar">
-        <li class="li-navbar"><a href="#" class="a-navbar">Home</a></li>
-        <li class="li-navbar"><a href="contact.html" class="a-navbar">Contact Me</a></li>
+    <div class="container-navbar">
+      <ul class='nav-list show'>
+        <li class="li-navbar">
+          <a href="#" class="a-navbar">HOME</a>
+        </li>
+        <li class="li-navbar">
+          <a href="contact.html" class="a-navbar">CONTACT ME</a>
+        </li>
+        
+        <li class="li-navbar">
+  <a href="about.html" class="btn-neon">ABOUT</a>
+</li>
+        
       </ul>
-    </nav>
+    </div>
     <!-- NAVIGATION BAR END -->
-
+    
     <!-- CONTENT -->
-    <section class="container-content">
-      <a href="https://youtube.com/ZarrMurbug" target="_blank">
-        <img src="Zarr.jpg" alt="Zarr Channel" class="img-content">
+    <div class="container-content">
+      <a href="https://whatsapp.com/channel/0029Vay4hgh2Jl8J4yIOIA3i" target="_blank">
+        <img src="Zarr.jpg" alt="YOKOSO Image" class="img-content" />
       </a>
-    </section>
+    </div>
     <!-- CONTENT END -->
-
+    
     <!-- FOOTER -->
-    <footer class="container-footer">
-      <h3 class="h3-footer">©𝐙𝐀𝐑𝐑•𝐎𝐅𝐅𝐂</h3>
-    </footer>
+    <div class="container-footer">
+      <h3 class="h3-footer">© Z A R R • O F F C</h3>
+    </div>
     <!-- FOOTER END -->
+
   </div>
+
+<script src="script.js"></script>
+
+<div style="position: fixed; bottom: 15px; right: 15px; z-index: 1000;">
+  <select id="modeSelector" class="btn-neon">
+    <option value="dark">Dark</option>
+    <option value="light">Light</option>
+    <option value="modern">Modern</option>
+  </select>
+</div>
+
+
+<div style="position: fixed; bottom: 60px; right: 15px; z-index: 1000;">
+  <select id="audioSelector" class="btn-neon">
+    <option value="media/background.mp3">Audio 1</option>
+    <option value="media/background2.mp3">Audio 2</option>
+    <option value="media/background3.mp3">Audio 3</option>
+  </select>
+</div>
 
 </body>
 </html>

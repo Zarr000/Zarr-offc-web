@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="description" content="Zarr OFFC - Official aesthetic and modern website" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - ZARR OFFC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode">
+
+<audio autoplay loop id="bg-audio">
+  <source src="media/background.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+>
+
+<video autoplay muted loop id="bg-video">
+  <source src="media/background.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+>
+
+<div id="loader-wrapper">
+  <div id="loader"></div>
+</div>
+ class="fade-in">
+<button id="darkModeToggle" class="btn-neon" style="position: fixed; top: 15px; right: 15px; z-index: 1000;">Dark Mode</button>
+  
+  <nav>
+<button id="navbar-toggle" class="navbar-toggle">☰</button> class="navbar">
+    <ul class='nav-list show'>
+<li><a href="index.html" class="btn-neon">Home</a></li>
+<li><a href="contact.html" class="btn-neon">Contact</a></li>
+<li><a href="about.html" class="btn-neon">About</a></li>
+<li class="dropdown">
+  <a href="#" class="btn-neon">⋮</a>
+  <ul class='nav-list show'>
+    <li><a href="gallery.html" class="btn-neon">Gallery</a></li>
+  </ul>
+</li>
+
+</ul>
+  <button id="mode-toggle" class="neon-btn">Ganti Mode</button>
+</nav>
+
+
+  <main class="about-section fade-in" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h1>About Me</h1>
+    <img src="Zarr.jpg" alt="My Photo" class="profile-img" />
+    <p>Hello! I'm ZARR, a content creator and enthusiast in media and creativity. Welcome to my official site!</p>
+  <div class="parallax"></div>
+</main>
+
+  <footer class="footer">
+    <p>© Z A R R • O F F C</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+<div style="position: fixed; bottom: 15px; right: 15px; z-index: 1000;">
+  <select id="modeSelector" class="btn-neon">
+    <option value="dark">Dark</option>
+    <option value="light">Light</option>
+    <option value="modern">Modern</option>
+  </select>
+</div>
+
+
+<div style="position: fixed; bottom: 60px; right: 15px; z-index: 1000;">
+  <select id="audioSelector" class="btn-neon">
+    <option value="media/background.mp3">Audio 1</option>
+    <option value="media/background2.mp3">Audio 2</option>
+    <option value="media/background3.mp3">Audio 3</option>
+  </select>
+</div>
+
+</body>
+</html>
